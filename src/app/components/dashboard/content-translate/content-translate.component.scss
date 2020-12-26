@@ -40,6 +40,7 @@
           margin-right: 16px;
         }
       }
+
       .icon-convert {
         width: 24px;
         height: 24px;
@@ -52,14 +53,40 @@
           margin-right: 16px;
         }
       }
+
     }
 
     .translate-action-content {
       display: flex;
+      height: calc(100% - 48px);
 
       .enter-translate {
         width: 50%;
         margin-left: 24px;
+        border-right: 1px solid red;
+        display: flex;
+        flex-direction: column;
+
+        .ct-area {
+          flex: 1;
+        }
+
+        .enter-translate-info {
+          display: flex;
+          .ct-icon {
+            display: flex;
+            flex: 1;
+          }
+
+          .ct-number-letter {
+            margin-right: 8px;
+          }
+
+          .ct-keyboard {
+            margin-right: 8px;
+          }
+
+        }
       }
 
       .result-translate {
@@ -70,6 +97,7 @@
           padding: 20px 48px 20px 48px;
         }
       }
+
     }
   }
 }

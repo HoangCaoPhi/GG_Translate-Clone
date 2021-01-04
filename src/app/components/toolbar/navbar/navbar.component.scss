@@ -14,9 +14,22 @@
       margin-left: 16px;
 
       .nav-left-icon {
+        border-radius: 50%;
+        margin: 0 4px;
+        padding: 12px;
+        vertical-align: middle;
         height: 24px;
         width: 24px;
-        margin-right: 8px;
+
+        &:hover {
+          background-color: rgba(60, 64, 67, 0.08);
+          outline: none;
+        }
+      }
+
+      .title-app {
+        font-size: 22px;
+        line-height: 24px;
       }
     }
 
@@ -26,17 +39,26 @@
       margin-right: 24px;
 
       .launcher {
+        border-radius: 50%;
+        margin: 0 4px;
+        padding: 12px;
+        vertical-align: middle;
         height: 24px;
         width: 24px;
-        margin-right: 8px;
+
+        &:hover {
+          background-color: rgba(60, 64, 67, 0.08);
+          outline: none;
+        }
       }
 
       .avt {
         width: 32px;
         height: 32px;
         min-width: 32px;
-        background-color: red;
-        border-radius: 50%;
+        img {
+          border-radius: 50%;
+        }
       }
     }
   }

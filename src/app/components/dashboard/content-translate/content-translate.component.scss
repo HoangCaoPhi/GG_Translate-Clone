@@ -19,7 +19,6 @@
 
   .translate-action {
     width: 1280px;
-    height: 180px;
     border-radius: 10px;
     border: 1px solid #e0e0e0;
     margin: 8px auto;
@@ -29,7 +28,6 @@
       height: 48px;
       align-items: center;
       padding: 0 24px;
-      width: 1280px;
       border-bottom: 1px solid #e0e0e0;
 
       .header-left {
@@ -42,8 +40,17 @@
       }
 
       .icon-convert {
-        width: 24px;
+        border-radius: 50%;
+        margin: 0 4px;
+        padding: 12px;
+        vertical-align: middle;
         height: 24px;
+        width: 24px;
+
+        &:hover {
+          background-color: rgba(60, 64, 67, 0.08);
+          outline: none;
+        }
       }
 
       .header-right {
@@ -58,14 +65,16 @@
 
     .translate-action-content {
       display: flex;
-      height: calc(100% - 48px);
+      // height: calc(100% - 48px);
+      height: auto;
 
       .enter-translate {
         width: 50%;
         margin-left: 24px;
-        border-right: 1px solid red;
+        border-right: 1px solid rgba(0,0,0,0.12);
         display: flex;
         flex-direction: column;
+        padding-bottom: 16px;
 
         .ct-area {
           flex: 1;

@@ -12,6 +12,14 @@
     align-items: center;
     margin: 8px auto;
 
+    .text, .document {
+      ::ng-deep {
+        .dx-button-text {
+          color: #1967d2;
+        }
+      }
+    }
+
     .document {
       margin-left: 16px;
     }
@@ -20,8 +28,10 @@
   .translate-action {
     width: 1280px;
     border-radius: 10px;
-    border: 1px solid #e0e0e0;
     margin: 8px auto;
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,0.12);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.22);
 
     .translate-action-header {
       display: flex;
@@ -36,16 +46,19 @@
         span {
           color: #878787;
           margin-right: 16px;
+          font-size: 14px;
         }
       }
 
       .icon-convert {
         border-radius: 50%;
         margin: 0 4px;
-        padding: 12px;
-        vertical-align: middle;
+        padding: 8px;
         height: 24px;
+        display: flex;
         width: 24px;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
           background-color: rgba(60, 64, 67, 0.08);
@@ -65,11 +78,10 @@
 
     .translate-action-content {
       display: flex;
-      // height: calc(100% - 48px);
       height: auto;
 
       .enter-translate {
-        width: 50%;
+        flex: 50%;
         margin-left: 24px;
         border-right: 1px solid rgba(0,0,0,0.12);
         display: flex;
@@ -99,6 +111,7 @@
       }
 
       .result-translate {
+        flex: 50%;
         .result {
           font-size: 24px;
           line-height: 32px;
